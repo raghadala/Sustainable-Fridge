@@ -32,20 +32,16 @@ label.pack()
 
 
 def switch():
-    image = tk.PhotoImage(file = "open fridge.png")
+    image = tk.PhotoImage(file = "openfridge.jpeg")
     imageLabel.configure(image = image)
     imageLabel.image = image
 frame = tk.Frame(closescreen)
 frame.pack()
 
 #buttons displayed on the close fridge screen
-openfridge_b = tk.Button(closescreen, text = 'Open Fridge', command=switch,bg='#D8BFD8', fg='black',command=switchToOpen)  
+openfridge_b = tk.Button(closescreen, text = 'Open Fridge', command=switch,bg='#D8BFD8', fg='black')  
 openfridge_b.place(x=160,y=120)
 
-def switchToOpen():
-  null
-#add_b = tk.Button(openscreen, text='Add Item', command=addItem)
-#delete_b = tk.Button(openscreen, text='Delete Item', command=deleteItem)
 imageLabel = tk.Label(frame)
 
 closescreen.mainloop()
